@@ -6,15 +6,9 @@ Everything lives in one file, [`starship-flight-14.html`](starship-flight-14.htm
 
 ## Run it
 
-The page is an ES module and loads Three.js plus Earth imagery from a CDN, so it needs a local web server and an internet connection. WebGL 2 is required.
+Open [`starship-flight-14.html`](starship-flight-14.html) in a browser. Three.js and the Earth imagery load from the network, so the page needs an internet connection. WebGL 2 is required.
 
-```bash
-python3 -m http.server 8080
-```
-
-Open [http://localhost:8080/starship-flight-14.html](http://localhost:8080/starship-flight-14.html).
-
-Append `?t=` to start at a mission elapsed time in seconds. `?t=142` opens at hot-staging; `?t=1517` opens at the orbital insertion burn.
+Add a `t` query parameter to start at a mission elapsed time in seconds. `starship-flight-14.html?t=142` opens at hot-staging; `?t=1517` opens at the orbital insertion burn.
 
 ## Controls
 
